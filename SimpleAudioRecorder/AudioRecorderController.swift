@@ -16,6 +16,7 @@ class AudioRecorderController: UIViewController {
             guard let audioPlayer = audioPlayer else { return }
             
             audioPlayer.delegate = self
+            audioPlayer.isMeteringEnabled = true
         }
     }
     
